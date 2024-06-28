@@ -1,0 +1,58 @@
+body {
+    background-image: url('gameimg.png');
+    background-size: cover; /* Ensures the background image covers the entire page */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.cell {
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size: 50px; /* Corrected syntax here */
+    cursor: pointer;
+    background-color: lightblue; /* Added background color */
+}
+
+#gameContainer {
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+}
+
+#cellContainer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin: auto;
+    background-color: lightgray; /* Added background color */
+}
+
+#restartBtn {
+    font-size: 24px; /* Increase the font size */
+    padding: 10px 20px; /* Add some padding for better appearance */
+    background-color: #4CAF50; /* Optional: change background color */
+    color: white; /* Optional: change text color */
+    border: none; /* Optional: remove border */
+    border-radius: 5px; /* Optional: add rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+#restartBtn:hover {
+    background-color: #45a049; /* Optional: change background color on hover */
+}
+.win {
+    color: green;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* Highlight Draw text */
+.draw {
+    color: red;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 2px black;
+}
